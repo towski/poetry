@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+	<script type="text/javascript"></script>
+	<style type="text/css" title="currentStyle" media="screen">
+		@import "/css/main.css";
+	</style>
+</head>
+<body id="css-zen-garden">
+<div id="container">
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span></span></h1>
+		</div>
+    <div style='float:left'>
+      <h1> Modern history </h1>
+				<ul>
+          {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> on {{ post.date | date_to_string }}</a></li>
+          {% endfor %}
+				</ul>
+    </div>
+
+		<div id="quickSummary">
+			<p class="p1"><h3>{{ page.title }}</h3></p>
+			<p class="p2"><span></span></p>
+		</div>
+
+		<div id="preamble">
+      {{ content }}
+		</div>
+	</div>
+
+	<div id="supportingText">
+		<div id="explanation">
+			<h3><span>Destruction</span></h3>
+			<p class="p1"><span></span></p>
+		</div>
+
+		<div id="footer">
+			<a href="http://www.github.com/towski" title="Read about the accessibility of this site">work</a>
+		</div>
+	</div>
+	
+	<div id="linkList">
+		<div id="linkList2">
+			<div id="lselect">
+			</div>
+
+			<div id="lresources">
+				<h3 class="resources"><span>Resources:</span></h3>
+				<ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div><div id="extraDiv3"><span></span></div>
+<div id="extraDiv4"><span></span></div><div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>
